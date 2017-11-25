@@ -5,11 +5,11 @@ const SigninUrl = '/signin';
 
 
 export function getSignIn(){
-    // const request = fetch(SigninUrl, {method:'GET'})
-    // .then(res=>res.json())
-
-    const request = axios.get(SigninUrl)
+    const request = fetch(SigninUrl, {method:'GET'})
     .then(res=>res.json())
+
+    // const request = axios.get(SigninUrl)
+    // .then(res=>res.json())
 
     return {
         type:'GET_SIGNIN',
@@ -19,17 +19,17 @@ export function getSignIn(){
 }
 
 export function sendMessage(values,cb){
-    // const request = fetch(SigninUrl, {
-    //     method:'POST',
-    //     headers:{
-    //         'Accept':"application/x-www-form-urlencoded",
-    //         'Content-Type':"application/json"
-    //     },
-    //     body:JSON.stringify(values)
-    // }).then(()=>cb());
+    const request = fetch(SigninUrl, {
+        method:'POST',
+        headers:{
+            'Accept':"application/json",
+            'Content-Type':"application/json"
+        },
+        body:JSON.stringify(values)
+    }).then(()=>cb());
 
-    const request = axios.post(SigninUrl,values)
-    .then(()=>cb());
+    // const request = axios.post(SigninUrl,values)
+    // .then(()=>cb());
 
     
 
@@ -46,7 +46,7 @@ export function PostComment(values,id,cb){
     const request = fetch(`${SigninUrl}/${id}/comment`, {
         method:'POST',
         headers:{
-            'Accept':"application/x-www-form-urlencoded",
+            'Accept':"application/json",
             'Content-Type':"application/json"
         },
         body:JSON.stringify(values)
@@ -63,7 +63,7 @@ export function addLikes(value,id,cb){
     const request = fetch(`${SigninUrl}/edit/${id}`,{
         method:'PUT',
         headers:{
-            'Accept':"application/x-www-form-urlencoded",
+            'Accept':"application/json",
             'Content-Type':"application/json"
         },
         body:JSON.stringify({like:value})
