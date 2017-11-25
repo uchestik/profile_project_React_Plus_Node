@@ -5,7 +5,12 @@ const SigninUrl = '/signin';
 
 
 export function getSignIn(){
-    const request = fetch(SigninUrl, {method:'GET'})
+    const request = fetch(SigninUrl, {
+        method:'GET',
+        headers:{
+            'Accept':"application/json",
+            'Content-Type':"application/json"
+        }})
     .then(res=>res.json())
 
     // const request = axios.get(SigninUrl)
