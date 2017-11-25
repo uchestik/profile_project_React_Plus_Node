@@ -35,7 +35,8 @@ var User = require('./models/user');
 
 //database url
 // mongoose.connect('mongodb://localhost:27017/sams_profile');
-mongoose.connect("mongodb://uchestik:abcdefgh1234@ds147979.mlab.com:47979/profile_project");
+// mongoose.connect("mongodb://uchestik:abcdefgh1234@ds147979.mlab.com:47979/profile_project");
+mongoose.connect(process.env.DATABASEURL);
 
 app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended:true}));
