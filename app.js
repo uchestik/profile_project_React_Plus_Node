@@ -81,6 +81,36 @@ app.use(function(req,res,next){
 // This project will be light on comments initially becasue I'm trying 
 // to push to production in 3 days.
 
+app.get('/', (req, res) => {
+    
+      const error = () => res.status(404).send('404')
+      const htmlFilePath = path.join( __dirname, './build', 'index.html' )
+    
+      fs.readFile( htmlFilePath, 'utf8', (err, htmlData) => {
+        if(err) {
+          error()
+        }
+        else {
+          match({ routes, location: req.url }, (err, redirect, ssrData) => {
+            if(err) {
+              error()
+            }
+            else if(redirect) {
+              res.redirect(302, redirect.pathname + redirect.search)
+            }
+            else if(ssrData) {
+              const ReactApp = renderToString( react.createElement(RouterContext, ssrData) )
+              const RenderedApp = htmlData.replace('{{SSR}}', ReactApp)
+              res.status(200).send(RenderedApp)
+            }
+            else {
+              error()
+            }
+          })
+        }
+      })
+    })
+
 // the signIn API routes
 
 app.get('/signin', function(req,res){
@@ -202,35 +232,7 @@ app.post('/login', passport.authenticate('local', {
 }), function(req,res){});
 
 
-app.get('/', (req, res) => {
-    
-      const error = () => res.status(404).send('404')
-      const htmlFilePath = path.join( __dirname, './build', 'index.html' )
-    
-      fs.readFile( htmlFilePath, 'utf8', (err, htmlData) => {
-        if(err) {
-          error()
-        }
-        else {
-          match({ routes, location: req.url }, (err, redirect, ssrData) => {
-            if(err) {
-              error()
-            }
-            else if(redirect) {
-              res.redirect(302, redirect.pathname + redirect.search)
-            }
-            else if(ssrData) {
-              const ReactApp = renderToString( react.createElement(RouterContext, ssrData) )
-              const RenderedApp = htmlData.replace('{{SSR}}', ReactApp)
-              res.status(200).send(RenderedApp)
-            }
-            else {
-              error()
-            }
-          })
-        }
-      })
-    })
+
 
 
 var PORT = process.env.PORT || 3000;
