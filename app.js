@@ -232,13 +232,13 @@ app.get('*', (req, res) => {
     })
 
 
-var PORT = process.env.PORT || 3000;
+// var PORT = process.env.PORT || 3000;
 
-app.listen(PORT, function(err, success){
-    if (err){
-        console.log(err);
-    } else{
-        console.log('server is running...');
-    }
-});
-// app.listen(process.env.PORT, process.env.IP);
+// app.listen(PORT, function(err, success){
+//     if (err){
+//         console.log(err);
+//     } else{
+//         console.log('server is running...');
+//     }
+// });
+app.listen(process.env.PORT, process.env.IP);
