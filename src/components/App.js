@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //containers/components
@@ -8,9 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from '../containers/Home';
 import References from '../containers/References';
 import SignInForm from '../containers/SignInForm';
-import About from './About';
 import Header from './Header';
-import Footer from './Footer';
 
 
 

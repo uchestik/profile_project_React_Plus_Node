@@ -207,7 +207,7 @@ app.delete('/signin/:id/comment/:commentId', function(req,res){
 //     failureRedirect:'/africanhero',
 // }), function(req,res){});
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     
       const error = () => res.status(404).send('404')
       const htmlFilePath = path.join( __dirname, './build', 'index.html' )
