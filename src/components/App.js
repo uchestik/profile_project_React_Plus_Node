@@ -18,8 +18,8 @@ const App =()=>{
                 <div>
                 <Header />
                     <Switch>
-                        <Route path={'/'} component={SignInForm} />
-                        
+                        <Route path={'/signinform'} component={SignInForm} />
+                        <Route path={'/'} component={Home} />
                     </Switch>
                 </div>
             </BrowserRouter>
