@@ -11,6 +11,9 @@ var passport = require('passport');
 var localStrategy = require('passport-local');
 var passportLocalMongoose = require('passport-local-mongoose');
 var methodOverride = require('method-override');
+var cors = require('cors');
+
+
 
 const http = require('http')
 const path = require('path')
@@ -38,6 +41,7 @@ var User = require('./models/user');
 // mongoose.connect("mongodb://uchestik:abcdefgh1234@ds147979.mlab.com:47979/profile_project");
 mongoose.connect(process.env.DATABASEURL);
 
+app.use(cors())
 app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended:true}));
 // app.use(express.static(__dirname + './public'));
