@@ -348,6 +348,10 @@ padding: 10px;
 
 
 @media only screen and (max-width: 740px) {
+    .container{
+        width:100%;
+    }
+    
     .postLinks .signInFormLink{
         font-size: 12px;
     }
@@ -372,19 +376,22 @@ padding: 10px;
 
     /* the banner starts here  */
 
-    .banner h3{
-        font-size: smaller;
+    .banner{
+        width: 96%;
+        margin-left: 2%;
+    }
+
+  .banner h3{
+        font-size: 19px;
     }
     .banner p{
-        font-size: smaller;
+        font-size: 14px;
     }
-    
+      
     /* the banner ends here  */
 
     /* the search section starts here */
-    /* .onlyMobile{
-        display: inline;
-    } */
+    
     .search-container{
         width:90%;
         margin-left: 5%;

@@ -372,13 +372,18 @@ padding: 10px;
 
     /* the banner starts here  */
 
-    .banner h3{
+    .banner{
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    /* .banner h3{
         font-size: smaller;
     }
     .banner p{
         font-size: smaller;
     }
-    
+     */
     /* the banner ends here  */
 
     /* the search section starts here */
