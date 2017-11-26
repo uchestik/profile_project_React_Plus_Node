@@ -19,6 +19,7 @@ const App =()=>{
                 <Header />
                     <Switch>
                         <Route path={'/'} component={SignInForm} />
+                        
                     </Switch>
                 </div>
             </BrowserRouter>
