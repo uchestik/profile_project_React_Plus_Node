@@ -46,7 +46,7 @@ app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended:true}));
 // app.use(express.static(__dirname + './public'));
 app.server = http.createServer(app)
-app.use(express.static(path.resolve(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 // parse application/json
 app.use(bodyParser.json())
@@ -208,7 +208,7 @@ app.delete('/signin/:id/comment/:commentId', function(req,res){
 //     failureRedirect:'/africanhero',
 // }), function(req,res){});
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     
       const error = () => res.status(404).send('404')
       const htmlFilePath = path.join( __dirname, './build', 'index.html' )
