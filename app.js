@@ -38,8 +38,8 @@ var User = require('./models/user');
 
 //database url
 // mongoose.connect('mongodb://localhost:27017/sams_profile');
-// mongoose.connect("mongodb://uchestik:abcdefgh1234@ds147979.mlab.com:47979/profile_project");
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://uchestik:abcdefgh1234@ds147979.mlab.com:47979/profile_project");
+// mongoose.connect(process.env.DATABASEURL);
 
 app.use(cors())
 app.use(methodOverride('_method'));
