@@ -1,0 +1,470 @@
+html,body{
+    padding:0;
+    margin:0;
+    font-size: 14px;
+    color:#424549;
+    background: #ececec;
+}
+h1,h2,h3,h4,h5,h6{
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+.vanish{
+    display:none;
+}
+
+/*the nav bar section starts here*/
+.menu-btn{
+    display: none;
+    cursor: pointer;
+}
+.menu-display{
+    display: block;
+}
+
+.topMenu{
+padding:0px;
+margin-bottom: 0;
+border-radius: 0;
+/* background: #141E30;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to top, #243B55, #141E30);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to top, #243B55, #141E30); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*border-bottom: 1px solid rgb(61,61,61);*/
+font-family: 'Open Sans', sans-serif;
+background: #283c86;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.topMenu ul{
+padding: 15px;
+margin: 0;
+display: block;
+}
+.topMenu .rightNavSection{
+text-align: right;
+}
+.topMenu ul a{
+color: white;
+}
+.topMenu ul li{
+list-style: none;
+display: inline;
+padding: 10px;
+}
+
+/* the menu section ends here */
+
+/* the top banner starts here */
+
+.banner{
+    font-family: 'Roboto', sans-serif; 
+    /* font-size: 14px;
+    text-align:left; */
+    position: relative;
+    width: 80%;
+    /* max-width: 800px; */
+    margin-left: 10%;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:rgb(246,246,246);
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner h3{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.banner p{
+    text-align: center;
+}
+.close{
+    position: absolute;
+    top:0;
+    right:0;
+    color:black;
+}
+
+/* the sidebar starts here */
+.sideBar{
+    z-index: 10;
+    background: white;
+    /* border:1px solid grey; */
+    margin-top: 5px;
+    max-width: 263px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+.sideBar .bar img{
+    border-radius:50%;
+    padding:2px;
+
+}
+.bold{
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color:#283c86;
+}
+.thin{
+    font-family: 'Roboto', sans-serif;
+}
+.bar{
+    padding:10px;
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: 1px solid #45a247;
+}
+.bar:hover{
+    background: #e1e1e1;
+}
+.sidebar-social-media ul{
+    padding: 0;
+    margin: 0;
+}
+.sidebar-social-media ul li{
+    list-style: none;
+    padding: 5px;
+    padding-left: 0; 
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+}
+.sidebar-credit{
+    margin-top: 30px;
+    /* background:#677077; */
+    color: white;
+    padding: 5px;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+/* the sidebar ends here */
+
+/* the post links section starts here */
+
+.postLinks{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width:90%;
+    margin-left: 5%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.postLinks .signInFormLink{
+    background: #45a247;
+    color:rgb(246,246,246);
+    font-size: 16px;
+    padding:10px;
+    /* border:1px solid #051938; */
+    /* color:#051938; */
+    border-radius: 1px;
+    margin-left: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.3s;
+}
+
+.postLinks .signInFormLink:hover{
+    color:white;
+    border:1px solid white;
+    background: #283c86;  
+}
+
+/* the post links section ends here */
+
+/* the message section starts here */
+
+.like_number{
+    margin-right: 10px;
+}
+
+.message_box{
+    z-index: -1;
+    background: white;
+    width:70%;
+    margin-left:15%;
+    border:1px solid gray;
+    padding:10px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+.message_box .sender{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.message_box .sender .sender_name{
+    font-weight: 700;
+    font-size: 14px;
+    color: #11487a;
+}
+.company{
+    color:#e73407;
+}
+.position{
+    color:#15b2d3;
+}
+.message_box .sender .post-date{
+    font-size: 11px;
+}
+.message_box .sender_message{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.message_box .likes{
+    font-size: 13px;
+}
+.message_box .interactive-functions{
+    margin-top:5px;
+}
+.message_box .interactive-functions .function{
+    padding:5px;
+    /* margin-left: 5px; */
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    margin-right:10px;
+}
+.message_box .interactive-functions .function:hover{
+    background: #e1e1e1;
+}
+.interactive-functions .add_likes{
+    padding:5px;
+    cursor: pointer;
+}
+
+/* the message section ends here */
+
+/* the comments section starts here */
+.message_box .interactive-functions ul{
+    display: block;
+    padding: 0;
+    margin:0;
+}
+.message_box .interactive-functions ul li{
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+.comment-box{
+    display: none;
+    margin-top:6px;
+}
+.comment-box form{
+    width:80%;
+    margin-left:10%;
+}
+.submit{
+    margin-right: 5px;
+}
+.individual_comment{
+    padding:5px;
+    border-left:2px solid #d0d0d0;
+    margin-bottom: 2px;
+    background:#f6f6f6;
+
+}
+.comment-author{
+    font-size: 11px;
+}
+.sender-name{
+    color: #11487a;
+}
+
+/* the comments section ends here */
+
+/* the search section starts here */
+.onlyMobile{
+    cursor: pointer;
+    color:white;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.searchbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.searchbox #searchbar:focus{
+    outline-width: 0;
+}
+/* .onlyMobile{
+    display:none;
+} */
+/* the search section ends here */
+
+/* the signin form starts here  */
+
+.signIn_form{
+    margin-top: 30px;
+    width: 60%;
+    margin-left: 20%;
+}
+#signIn_form_header{
+    margin-bottom: 10px;
+    
+}
+/* the signin form ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 740px) {
+    .postLinks .signInFormLink{
+        font-size: 12px;
+    }
+    /*the header starts here*/
+    .topMenu .rightNavSection{
+        padding: 0;
+        display: none;
+        text-align: left;
+    }
+    .topMenu .rightNavSection li{
+        display: block;
+    }
+    .topMenu .rightNavSection li a{
+        padding-left: 10px;
+    }
+    
+    .menu-btn{
+        display: inline;
+        color: white;
+    }
+    /*the header ends here*/
+
+    /* the banner starts here  */
+
+    .banner h3{
+        font-size: smaller;
+    }
+    .banner p{
+        font-size: smaller;
+    }
+    
+    /* the banner ends here  */
+
+    /* the search section starts here */
+    /* .onlyMobile{
+        display: inline;
+    } */
+    .search-container{
+        width:90%;
+        margin-left: 5%;
+    }
+
+    /* the search section ends here */
+
+    /* the sidebar section starts here */
+    .sideBar{
+        display:none;
+        position: absolute;
+        max-width: 200px;
+        top: auto;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    /* the sidebar section ends here */
+    /* the message section starts here */
+    .message_box{
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* the message section ends here */
+    /* signin form starts here */
+    .signIn_form{
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    /* signin form ends here */
+}
+
+@media only screen and (max-width: 990px) and (min-width: 550px) {
+    .container{
+        width:100%;
+    }
+    /*the header starts here*/
+    .leftNavSection{
+        display: block;
+        width: 100%;
+    }
+    .topMenu .rightNavSection{
+        padding: 0;
+        display: none;
+        text-align: left;
+    }
+    .topMenu .rightNavSection li{
+        display: block;
+    }
+    .topMenu .rightNavSection li a{
+        padding-left: 10px;
+    }
+    
+    .menu-btn{
+        display: inline;
+        color: white;
+    }
+    /*the header ends here*/
+
+     /* the sidebar section starts here */
+     .sideBar{
+        display:none;
+        position: absolute;
+        top: auto;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    /* the sidebar section ends here */
+
+    /* the signin form starts here */
+
+    .signIn_form{
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    /* signin form ends here */
+}
