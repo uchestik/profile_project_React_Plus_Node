@@ -11,3 +11,4 @@ There are a few setup steps to effectively use this app on your computer.
 5 ENABLE CROSS ORIGIN RESOURCE SHARING or you will get an error because our app is trying to communicate with an API running on a different URL. I use a crome extension called Allow-Control-Allow-Origin.
 
 I hope its not too complicated. "# profile_project_React_Plus_Node" 
+"# profile_project_React_Redux_Node_SSR" 
